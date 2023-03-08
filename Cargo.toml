@@ -1,0 +1,23 @@
+[package]
+name = "validator-mail-service"
+version = "0.1.0"
+authors = [
+    "XOR·APPS <developers@xorapps.network>",
+    "M81 Developers <support@m81.network>",
+]
+edition = "2021"
+license = "AGPL-3.0-or-later"
+description = " Standalone Mail services for Validator Nodes "
+repository = "https://github.com/m81network/ValidatorMailService"
+homepage = "https://m81.network/"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+xor-mailer = { git = "https://github.com/xorapps/XOR-MAILER", version = "0.2.0" }
+anyhow = "1.0.69"
+borsh = "0.9.3"
+serde = { version = "1.0.152", features = ["derive"] }
+tokio = { version = "1.25.0", features = ["full"] }
+toml = "0.7.2"
+lazy_static = "1.4.0"
